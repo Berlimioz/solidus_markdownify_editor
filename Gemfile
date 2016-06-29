@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 # Declare your gem's dependencies in solidus_markdownify_editor.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -12,4 +13,3 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-

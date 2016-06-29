@@ -1,0 +1,9 @@
+---
+en:
+  spree:
+    enable_markdownify_editor: Enable Markdown Editor
+    markdownify_editor: Markdown Editor
+    markdownify_editor_description: Configure Markdown Editor settings.
+    markdownify_editor_engine: Markdown Editor engine
+    markdownify_editor_ids: Markdown Editor Identificators
+    markdownify_editor_ids_description: "List textarea's ids splitted by spaces here"

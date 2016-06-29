@@ -1,0 +1,21 @@
+<% @editor_setting = Spree::MarkdownifyEditorSetting.new %>
+<% is_enabled = @editor_setting[:enabled] %>
+<% ids = @editor_setting[:ids].split %>
+
+<% if is_enabled and ids.any? %>
+<%= javascript_include_tag 'spree/solidus_markdownify_editor' %>
+
+<script>
+	$(function () {
+		/* Inject each textarea product_description with .markdownify class required for Markdownify */
+		$('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>').addClass('markdownify');
+	});
+
+	$(document).ready(function () {
+		$('<%= raw ids.each.map{|id| "textarea##{id}" }.join(", ") %>').each(function(index, el){ build_editor(el); });
+	});
+</script>
+
+<%= stylesheet_link_tag 'spree/backend/solidus_markdownify_editor' %>
+
+<% end %>

@@ -1,0 +1,10 @@
+---
+fr:
+  spree:
+    enable_markdownify_editor: Activer l'éditeur markdown
+    markdownify_editor: Editeur markdown
+    markdownify_editor_description: Configurer les paramètres de l'éditeur markdown.
+    markdownify_editor_engine: Engine éditeur markdown
+    markdownify_editor_ids: Identifiants de l'éditeur markdown
+    markdownify_editor_ids_description: "Indiquer ici la list des ids des champs texte séparés par des espaces"
+

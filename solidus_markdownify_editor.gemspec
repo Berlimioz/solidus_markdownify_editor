@@ -18,9 +18,12 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
+  s.add_dependency 'sass-rails'
   s.add_dependency 'deface',        '~> 1.0.2'
   s.add_dependency 'solidus_backend', '~> 1.3.0'
-  s.add_dependency 'markdownify', '~> 1.3.0'
+  s.add_dependency "rails-assets-jquery.markdownify"
+  s.add_dependency 'codemirror-rails'
+  s.add_dependency 'redcarpet'
 
   s.add_development_dependency "sqlite3"
 end
